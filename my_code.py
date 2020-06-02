@@ -2,8 +2,38 @@ from py_extras import change_stmt
 
 
 def make_change(cost, amount_given):
-    # Enter you code here
-    # Consider using variables that match the variables used in the call to change_stmt() below
+  twenties = 0, tens = 0, ones = o, quarters = 0, dimes = 0, nickels = 0, pennies = 0
+    change = amount_given - cost
+    while change is >= 20 
+    twenties = twenties + 1
+    change = change - 20
+    change = amount_given - cost
+    while change is >= 10
+    tens = tens + 1    
+    change = change - 10
+    change = amount_given - cost
+    while change is >= 1
+    ones = ones + 1
+    change = change - 1
+    change = amount_given - cost
+    while change is >= .25
+    quarters = quarters + 1
+    change = change - .25
+    change = amount_given - cost
+    while change is >= .10
+    dimes = dimes + 1
+    change = change - .10
+    change = amount_given - cost
+    while change is >= .05
+    nickels = nickels + 1
+    change = change - .05
+    change = amount_given - cost
+    while change is >= .01
+    pennies = pennies + 1
+    change = change - .01
+    change = amount_given - cost
+    change_stmt()
+        # Consider using variables that match the variables used in the call to change_stmt() below
 
     # This will be the final statement of make_change() and will return the appropriate string
     return change_stmt(twenties, tens, fives, ones, quarters, dimes, nickels, pennies)
